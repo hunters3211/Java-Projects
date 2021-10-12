@@ -1,0 +1,17 @@
+@startuml
+class App
+class getInput{
+    open file
+    store input
+}
+class sort{
+    sort alphabetically
+}
+
+class getOutput{
+    generate output
+}
+App o--> getInput
+App o--> sort
+App o--> getOutput
+@enduml

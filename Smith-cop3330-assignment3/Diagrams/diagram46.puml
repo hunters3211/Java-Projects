@@ -1,0 +1,15 @@
+@startuml
+class app
+
+class getInput{
+    readFile
+    toString
+}
+class genOutput{
+    checkWordFrequency
+}
+
+
+app->genOutput
+app->getInput
+@enduml

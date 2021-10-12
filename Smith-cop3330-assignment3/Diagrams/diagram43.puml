@@ -1,0 +1,18 @@
+@startuml
+class app{
+user input
+}
+class generateOutput{
+makeHtml
+makeCSS
+makeJS
+}
+class SkeletonInfo{
+wantsJS
+wantsCSS
+}
+
+app o-> SkeletonInfo
+app o-> generateOutput
+SkeletonInfo o--> generateOutput
+@enduml

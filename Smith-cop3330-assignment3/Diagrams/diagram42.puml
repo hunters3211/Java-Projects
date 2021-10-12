@@ -1,0 +1,14 @@
+@startuml
+class app
+class GetInput{
+    read file
+    return string
+}
+class GenerateOutput{
+    format string
+    create file
+}
+
+app o--> GetInput
+app o-->GenerateOutput
+@enduml

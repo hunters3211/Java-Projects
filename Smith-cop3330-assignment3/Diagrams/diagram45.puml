@@ -1,0 +1,12 @@
+@startuml
+class app
+class generateOutput4{
+    replaceToString
+}
+class getInput3{
+    readFile
+}
+
+app-->getInput3
+app-->generateOutput4
+@enduml
